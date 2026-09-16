@@ -3,298 +3,873 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelraman Esmail Hanoura - AI Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of Abdelraman Esmail Hanoura, an AI Engineer specializing in Deep Learning and Machine Learning.">
+    <title>Abdelrahman Hanoura | Data Scientist & AI Engineer</title>
+    <meta name="description" content="Portfolio of Abdelrahman Hanoura - Data Scientist, AI Engineer, and Machine Learning Engineer specializing in Agentic AI, Deep Learning, and End-to-End ML Solutions.">
+    <meta name="keywords" content="Abdelrahman Hanoura, Data Scientist, AI Engineer, Machine Learning, Deep Learning, LangChain, LangGraph, Computer Vision, Portfolio">
+    <meta name="author" content="Abdelrahman Hanoura">
+    
+    <!-- Google Fonts: Inter, Outfit & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">AH<span class="dot">.</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-contact">Contact Me</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-circle">AH</span>
+                    <span class="brand-name">Abdelrahman<span class="brand-dot">.</span></span>
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item-cta">
+                        <a href="https://drive.google.com/file/d/1FQif_pcu1FBZQSCa1dgez5DvVTWGsmm0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-accent">
+                            <i class="fas fa-file-pdf"></i> View / Download CV
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="https://drive.google.com/file/d/1FQif_pcu1FBZQSCa1dgez5DvVTWGsmm0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline desktop-cv-btn" title="View CV on Google Drive / PDF">
+                        <i class="fas fa-file-pdf"></i> CV
+                    </a>
+                    <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <!-- 1. Cover -->
-        <section id="cover" class="hero fade-in">
-            <div class="hero-content">
-                <h2 class="greeting">Hello, I'm</h2>
-                <h1 class="name">Abdelraman <span>Hanoura</span></h1>
-                <h3 class="title">AI & Machine Learning Engineer</h3>
-                <p class="summary">Specializing in Deep Learning, Computer Vision, and impactful AI solutions.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">View My Work</a>
-                    <a href="#contact" class="btn secondary">Hire Me</a>
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <div class="blob-bg"></div>
-                <img src="profile.jpeg" alt="Abdelraman Hanoura" class="hero-image">
-            </div>
-        </section>
-
-        <!-- 2. About Me -->
-        <section id="about" class="section fade-in">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="about-container">
-                <div class="about-text glass-card">
-                    <p>Dedicated Computer Science and Artificial Intelligence student specializing in deep learning and machine learning. Developed impactful projects in customer churn prediction, cardiovascular risk assessment.</p>
-                    <p>Passionate about leveraging AI technologies to solve real-world problems and deliver valuable insights, while collaborating effectively within diverse teams.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Why Choose Me -->
-        <section id="why-choose-me" class="section fade-in">
-            <h2 class="section-title">Why Choose <span>Me</span></h2>
-            <div class="grid-container">
-                <div class="feature-card glass-card">
-                    <i class="fas fa-rocket feature-icon"></i>
-                    <h3>High Performance</h3>
-                    <p>Proven track record of optimizing neural networks and reducing latency by 15%.</p>
-                </div>
-                <div class="feature-card glass-card">
-                    <i class="fas fa-bullseye feature-icon"></i>
-                    <h3>Precision</h3>
-                    <p>Achieved 99.90% accuracy in cardiovascular risk assessment and 94% mAP50 in waste detection.</p>
-                </div>
-                <div class="feature-card glass-card">
-                    <i class="fas fa-users feature-icon"></i>
-                    <h3>Team Collaboration</h3>
-                    <p>Experience leading workshops, authoring technical documentation, and enhancing team efficiency.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Education -->
-        <section id="education" class="section fade-in">
-            <h2 class="section-title"><span>Education</span></h2>
-            <div class="timeline glass-card">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor, Computer Science and Artificial Intelligence</h3>
-                        <h4>Tanta University</h4>
-                        <p class="date">2024 - 2027</p>
-                        <p>GPA: 3.6</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Skills -->
-        <section id="skills" class="section fade-in">
-            <h2 class="section-title">My <span>Skills</span></h2>
-            <div class="skills-container">
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-code"></i> Programming & Tools</h3>
-                    <div class="skill-tags">
-                        <span>Python</span><span>SQL</span><span>MySQL</span><span>Git</span><span>GitHub</span><span>Jupyter</span><span>Google Colab</span>
-                    </div>
-                </div>
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span>Scikit-Learn</span><span>XGBoost</span><span>GridSearchCV</span><span>Feature Engineering</span><span>MLFlow</span>
-                    </div>
-                </div>
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-network-wired"></i> Deep Learning</h3>
-                    <div class="skill-tags">
-                        <span>TensorFlow</span><span>Keras</span><span>CNN</span><span>YOLOv8-v11</span><span>Computer Vision</span>
-                    </div>
-                </div>
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
-                    <div class="skill-tags">
-                        <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Working Experience -->
-        <section id="experience" class="section fade-in">
-            <h2 class="section-title">Working <span>Experience</span></h2>
-            <div class="timeline">
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>AI for Business Engineer</h3>
-                        <h4>National Telecommunication Institute - NTI</h4>
-                        <p class="date">Mar 2026 – May 2026</p>
-                        <ul>
-                            <li>Designed scalable CV workflows using YOLOv8-v11, achieving 94% mAP50 accuracy on 24,000 images.</li>
-                            <li>Optimized architectures, reducing latency by 15%.</li>
-                            <li>Authored technical docs, improving onboarding by 20%.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>AI Engineer</h3>
-                        <h4>National Telecommunication Institute - NTI</h4>
-                        <p class="date">Nov 2025 - Sep 2025</p>
-                        <ul>
-                            <li>Architected ML pipelines for cardiovascular risk, achieving 99.90% accuracy ($2.5M potential savings).</li>
-                            <li>Standardized preprocessing, cutting setup time by 15%.</li>
-                            <li>Led feature engineering workshops.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. Offered Services -->
-        <section id="services" class="section fade-in">
-            <h2 class="section-title">Offered <span>Services</span></h2>
-            <div class="grid-container">
-                <div class="service-card glass-card">
-                    <i class="fas fa-robot service-icon"></i>
-                    <h3>Machine Learning Models</h3>
-                    <p>End-to-end development of predictive pipelines tailored to business needs.</p>
-                </div>
-                <div class="service-card glass-card">
-                    <i class="fas fa-eye service-icon"></i>
-                    <h3>Computer Vision</h3>
-                    <p>Object detection, semantic segmentation, and custom image processing workflows.</p>
-                </div>
-                <div class="service-card glass-card">
-                    <i class="fas fa-chart-pie service-icon"></i>
-                    <h3>Data Analysis & Visualization</h3>
-                    <p>Transforming complex datasets into actionable insights with stunning visualizations.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. Projects -->
-        <section id="projects" class="section fade-in">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card glass-card">
-                    <div class="project-content">
-                        <h3>Cardiovascular Risk Assessment</h3>
-                        <p class="date">Sep 2025</p>
-                        <p>Web-based prediction system using Random Forest. Achieved 89.9% accuracy on 14 clinical variables, delivering personalized recommendations for early detection.</p>
-                        <div class="tech-stack"><span>Random Forest</span><span>Python</span><span>Web</span></div>
-                        <a href="#" class="btn-outline">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card glass-card">
-                    <div class="project-content">
-                        <h3>Customer Churn Prediction</h3>
-                        <p class="date">Mar 2026</p>
-                        <p>Developed using XGBoost and GridSearch, achieving 92% accuracy. Enables proactive strategies reducing churn by 25% and increasing LTV by $1.8M.</p>
-                        <div class="tech-stack"><span>XGBoost</span><span>GridSearchCV</span><span>Data Analysis</span></div>
-                        <a href="#" class="btn-outline">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. Achievements -->
-        <section id="achievements" class="section fade-in">
-            <h2 class="section-title"><span>Achievements</span></h2>
-            <div class="stats-container">
-                <div class="stat-box glass-card">
-                    <h3 class="counter" data-target="99.9">0</h3><span>%</span>
-                    <p>Peak Model Accuracy</p>
-                </div>
-                <div class="stat-box glass-card">
-                    <h3 class="counter" data-target="2.5">0</h3><span>M$</span>
-                    <p>Potential Savings Enabled</p>
-                </div>
-                <div class="stat-box glass-card">
-                    <h3 class="counter" data-target="15">0</h3><span>%</span>
-                    <p>Latency Reduction</p>
-                </div>
-                <div class="stat-box glass-card">
-                    <h3 class="counter" data-target="24">0</h3><span>k+</span>
-                    <p>Images Processed</p>
-                </div>
-            </div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
             
-            <div class="certifications mt-5">
-                <h3 class="text-center mb-4" style="font-size: 1.8rem;">Certifications</h3>
-                <div class="tags-center">
-                    <span class="cert-tag glass-card"><i class="fas fa-certificate"></i> Deep Learning Fundamentals, NVIDIA</span>
-                    <span class="cert-tag glass-card"><i class="fas fa-certificate"></i> AI for Business - NTI</span>
-                    <span class="cert-tag glass-card"><i class="fas fa-certificate"></i> AI With Huawei - NTI</span>
-                    <span class="cert-tag glass-card"><i class="fas fa-certificate"></i> Python Programming, MaharaTech</span>
+            <div class="container hero-container">
+                <div class="hero-text-col" data-aos="fade-up" data-aos-duration="900">
+                    <div class="hero-badge">
+                        <span class="badge-pulse"></span>
+                        <span>Available for High-Impact Roles & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-gradient">Abdelrahman Hanoura</span>
+                    </h1>
+
+                    <div class="role-pills">
+                        <span class="role-pill"><i class="fas fa-brain"></i> Data Scientist</span>
+                        <span class="role-pill"><i class="fas fa-robot"></i> AI Engineer</span>
+                        <span class="role-pill"><i class="fas fa-network-wired"></i> ML Engineer</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        Computer Science student and AI practitioner with a sharp mathematical foundation. Experienced in designing end-to-end Machine Learning pipelines, Agentic AI workflows with LangChain & LangGraph, and high-performance Computer Vision models that deliver real-world business value.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1FQif_pcu1FBZQSCa1dgez5DvVTWGsmm0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-subtle" title="View / Download Resume (PDF)">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Social Links (Clickable) -->
+                    <div class="hero-social-strip">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://linkedin.com/in/abdo-hannoura" target="_blank" rel="noopener noreferrer" class="social-icon-chip" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/abdelrahman-2005" target="_blank" rel="noopener noreferrer" class="social-icon-chip" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:hanouraabdo8@gmail.com" class="social-icon-chip" title="Send Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="avatar-card-wrapper">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-frame">
+                            <img src="profile.jpeg" alt="Abdelrahman Hanoura" class="avatar-img">
+                        </div>
+
+                        <!-- Floating Micro-Cards (Canva Style) -->
+                        <div class="floating-chip chip-top-right">
+                            <div class="chip-icon bg-indigo"><i class="fas fa-users-gear"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-title">DEPI Team Leader</span>
+                                <span class="chip-sub">AI & Agentic Systems</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-chip chip-bottom-left">
+                            <div class="chip-icon bg-cyan"><i class="fas fa-shield-halved"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-title">High-Precision AI</span>
+                                <span class="chip-sub">Robust Predictive Models</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-chip chip-center-right">
+                            <div class="chip-icon bg-amber"><i class="fas fa-diagram-project"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-title">LangGraph & Vision</span>
+                                <span class="chip-sub">Production Workflows</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 10. Testimonials -->
-        <section id="testimonials" class="section fade-in">
-            <h2 class="section-title"><span>Testimonials</span></h2>
-            <div class="testimonial-slider glass-card">
-                <div class="testimonial-slide active">
-                    <p class="quote">"Abdelraman is an exceptional AI engineer. His ability to architect complex ML pipelines and significantly reduce inference latency was crucial for our project's success."</p>
-                    <div class="author">
-                        <h4>Project Manager</h4>
-                        <p>National Telecommunication Institute</p>
+        <!-- Impact Highlights Bar -->
+        <section class="highlights-section">
+            <div class="container">
+                <div class="highlights-grid" data-aos="fade-up">
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-diagram-next"></i></div>
+                        <div class="highlight-text">
+                            <h4>Agentic Workflows</h4>
+                            <p>Multi-agent orchestration & LangChain automation for enterprise tasks</p>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <div class="highlight-text">
+                            <h4>High-Precision ML</h4>
+                            <p>Clinical decision-support & proactive retention models</p>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-eye"></i></div>
+                        <div class="highlight-text">
+                            <h4>Computer Vision</h4>
+                            <p>Object detection with YOLOv8–v11 & architectural latency tuning</p>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-calculator"></i></div>
+                        <div class="highlight-text">
+                            <h4>Mathematical Modeling</h4>
+                            <p>Applied statistics, optimization, and rigorous problem-solving</p>
+                        </div>
                     </div>
                 </div>
-                <!-- More slides can be added here -->
             </div>
         </section>
 
-        <!-- 11. Contact Me -->
-        <section id="contact" class="section fade-in">
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <div class="contact-container glass-card">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always open to discussing product design work or partnership opportunities.</p>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>hanouraabdo8@gmail.com</p>
+        <!-- About Me Section with Storytelling & Profile -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Story & <span class="highlight-gradient">The Drive Behind My Work</span></h2>
+                    <p class="section-desc">How a simple question turned into a lifelong pursuit of AI Engineering and intelligent automation.</p>
+                </div>
+
+                <div class="about-story-layout">
+                    <!-- Left Column: Storytelling Portrait Card -->
+                    <div class="story-profile-card glass-card" data-aos="fade-right">
+                        <div class="story-avatar-wrap">
+                            <img src="profile.jpeg" alt="Abdelrahman Hanoura" class="story-avatar-img">
+                            <span class="story-badge-online"><i class="fas fa-sparkles"></i> AI Engineer</span>
+                        </div>
+                        <div class="story-profile-info">
+                            <h3 class="story-name">Abdelrahman Hanoura</h3>
+                            <p class="story-title">Data Scientist | AI & ML Engineer</p>
+                            <span class="story-location"><i class="fas fa-location-dot"></i> Cairo & Tanta, Egypt</span>
+                        </div>
+
+                        <!-- University & Experience snapshot chips -->
+                        <div class="story-credential-chips">
+                            <div class="sc-chip">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Tanta University (B.Sc. CS & AI)</span>
+                            </div>
+                            <div class="sc-chip">
+                                <i class="fas fa-users-gear"></i>
+                                <span>DEPI AI Team Leader</span>
+                            </div>
+                            <div class="sc-chip">
+                                <i class="fas fa-network-wired"></i>
+                                <span>NTI & Huawei ML Trainee</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card-cta">
+                            <a href="https://drive.google.com/file/d/1FQif_pcu1FBZQSCa1dgez5DvVTWGsmm0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fas fa-file-pdf"></i> View / Download CV (PDF)
+                            </a>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+20 1097868996</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Cairo, Egypt</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/abdo-hannoura" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+
+                    <!-- Right Column: Storytelling Narrative -->
+                    <div class="story-narrative-card glass-card" data-aos="fade-left">
+                        <div class="story-quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+
+                        <div class="story-content">
+                            <p class="story-lead">I’ve never liked repetitive things.</p>
+                            
+                            <p class="story-text">
+                                Even as a kid, whenever I had to do the same thing over and over, I’d think:
+                            </p>
+
+                            <blockquote class="story-callout">
+                                <span>“There has to be a better way.”</span>
+                            </blockquote>
+
+                            <p class="story-text">
+                                So I started finding shortcuts, simplifying tasks, and eventually automating them. Years later, that continuous drive and mindset led me to <strong>Artificial Intelligence & Machine Learning Engineering</strong>.
+                            </p>
+
+                            <p class="story-text">
+                                Today, I build AI-powered systems, agentic workflows with <strong>LangChain & LangGraph</strong>, and predictive machine learning architectures that turn repetitive, burdensome work into simple, reliable, automated experiences.
+                            </p>
+
+                            <div class="story-punchline-box">
+                                <i class="fas fa-hourglass-half punchline-icon"></i>
+                                <p class="story-punchline">
+                                    “Because automation isn’t just about technology — it’s about giving people their time back.”
+                                </p>
+                            </div>
+
+                            <div class="story-meta-tags">
+                                <span><i class="fas fa-robot"></i> Agentic Workflows</span>
+                                <span><i class="fas fa-brain"></i> Machine Learning</span>
+                                <span><i class="fas fa-code"></i> Python & FastAPI</span>
+                                <span><i class="fas fa-chart-line"></i> Optimization</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+            </div>
+        </section>
+
+        <!-- Skills & Technologies Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Technical Mastery</span>
+                    <h2 class="section-title">Skills & <span class="highlight-gradient">Tech Stack</span></h2>
+                    <p class="section-desc">A structured view of tools, libraries, and frameworks I leverage to engineer AI systems.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Agentic & RAG Tools -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-violet">
+                                <i class="fas fa-diagram-project"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Agentic & RAG Tools</h3>
+                                <span class="category-subtitle">Autonomous Workflows</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">LangChain</span>
+                            <span class="skill-badge">LangGraph</span>
+                            <span class="skill-badge">FastAPI</span>
+                            <span class="skill-badge">Multi-Agent Systems</span>
+                            <span class="skill-badge">Workflow Automation</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            <span class="skill-badge">Business Rules Integration</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+
+                    <!-- Category 2: Machine Learning & Deep Learning -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-indigo">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">ML & Deep Learning</h3>
+                                <span class="category-subtitle">Predictive Modeling</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-badge">Keras</span>
+                            <span class="skill-badge">XGBoost</span>
+                            <span class="skill-badge">Random Forest</span>
+                            <span class="skill-badge">Convolutional Networks (CNNs)</span>
+                            <span class="skill-badge">GridSearchCV</span>
+                            <span class="skill-badge">Hyperparameter Optimization</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+
+                    <!-- Category 3: Computer Vision -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-cyan">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Computer Vision</h3>
+                                <span class="category-subtitle">Object Detection & Segmentation</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">YOLOv8 – YOLOv11</span>
+                            <span class="skill-badge">Object Detection</span>
+                            <span class="skill-badge">Image Processing</span>
+                            <span class="skill-badge">Data Augmentation</span>
+                            <span class="skill-badge">Inference Latency Tuning</span>
+                            <span class="skill-badge">Semantic Segmentation</span>
+                        </div>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
+
+                    <!-- Category 4: Programming & Databases -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-emerald">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Languages & Tools</h3>
+                                <span class="category-subtitle">Engineering & Version Control</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL / MySQL</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">R</span>
+                            <span class="skill-badge">Git & GitHub</span>
+                            <span class="skill-badge">Jupyter Notebook</span>
+                            <span class="skill-badge">Google Colab</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: Data Science & Visualization -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-amber">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Data Processing & Analytics</h3>
+                                <span class="category-subtitle">Feature Engineering & Insights</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-badge">Plotly</span>
+                            <span class="skill-badge">Data Preprocessing</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6: Core Foundations & Soft Skills -->
+                    <div class="skill-category-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="category-header">
+                            <div class="category-icon-wrap bg-rose">
+                                <i class="fas fa-users-viewfinder"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Core Science & Leadership</h3>
+                                <span class="category-subtitle">Analytical Mindset</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Applied Mathematics</span>
+                            <span class="skill-badge">Statistics & Probability</span>
+                            <span class="skill-badge">Linear Algebra & Calculus</span>
+                            <span class="skill-badge">Algorithm Development</span>
+                            <span class="skill-badge">Team Leadership</span>
+                            <span class="skill-badge">Technical Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Featured Work</span>
+                    <h2 class="section-title">Selected <span class="highlight-gradient">Engineering Projects</span></h2>
+                    <p class="section-desc">Focused on machine learning, predictive intelligence, and autonomous AI systems.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Agentic AI Workflows -->
+                    <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-card-header">
+                            <div class="project-pill-label"><i class="fas fa-sitemap"></i> Agentic Orchestration</div>
+                            <span class="project-status">Industrial AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Autonomous Agentic AI & Business Rule Automation</h3>
+                            <p class="project-desc">
+                                Engineered advanced multi-agent workflows that automate complex operational procedures and decision logic. Combines LangChain and LangGraph to manage stateful graph-based agents, integrated via robust FastAPI microservices that align seamlessly with industrial business specifications.
+                            </p>
+
+                            <div class="project-highlights">
+                                <div class="ph-item"><i class="fas fa-check"></i> Stateful multi-agent execution graphs</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> Mathematical models translated to production rules</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> High-throughput async FastAPI backends</div>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>LangChain</span>
+                                <span>LangGraph</span>
+                                <span>FastAPI</span>
+                                <span>Python</span>
+                                <span>Multi-Agent</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <a href="#contact" class="btn btn-sm btn-primary">
+                                <i class="fas fa-envelope"></i> Inquire Architecture
+                            </a>
+
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Customer Churn Prediction -->
+                    <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-card-header">
+                            <div class="project-pill-label"><i class="fas fa-arrow-trend-up"></i> Predictive Analytics</div>
+                            <span class="project-status">Enterprise ML</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Customer Churn Prediction & Retention Engine</h3>
+                            <p class="project-desc">
+                                Built an end-to-end customer churn forecasting framework applying XGBoost, Random Forest, and Decision Trees. Performed comprehensive exploratory data analysis, systematic feature engineering, and hyperparameter tuning to empower business teams with proactive customer retention insights.
+                            </p>
+
+                            <div class="project-highlights">
+                                <div class="ph-item"><i class="fas fa-check"></i> Rigorous cross-validation & hyperparameter tuning</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> Deep behavioral feature importance analysis</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> Clear metric dashboards for executive decisions</div>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>XGBoost</span>
+                                <span>Random Forest</span>
+                                <span>GridSearchCV</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <a href="#contact" class="btn btn-sm btn-primary">
+                                <i class="fas fa-envelope"></i> Discuss Solution
+                            </a>
+
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Cardiovascular Risk Assessment -->
+                    <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-card-header">
+                            <div class="project-pill-label"><i class="fas fa-notes-medical"></i> Healthcare AI</div>
+                            <span class="project-status">Clinical ML</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Cardiovascular Risk Assessment & Clinical Classifier</h3>
+                            <p class="project-desc">
+                                Designed a clinical decision-support model to evaluate cardiovascular risk profiles based on 14 clinical and physiological variables. Implemented statistical data preprocessing, clinical feature transformation, and ensemble modeling to provide reliable, early-stage risk classification.
+                            </p>
+
+                            <div class="project-highlights">
+                                <div class="ph-item"><i class="fas fa-check"></i> Validated on multi-variable clinical profiles</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> Robust outlier handling & distribution scaling</div>
+                                <div class="ph-item"><i class="fas fa-check"></i> Early-stage risk categorization for timely triage</div>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Random Forest</span>
+                                <span>Statistical Modeling</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <a href="#contact" class="btn btn-sm btn-primary">
+                                <i class="fas fa-envelope"></i> Discuss Solution
+                            </a>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Training Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Career Milestones</span>
+                    <h2 class="section-title">Professional Experience & <span class="highlight-gradient">Technical Training</span></h2>
+                    <p class="section-desc">Hands-on leadership and applied engineering in top industry initiatives.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Item 1: DEPI -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="experience-title">Team Leader & AI Intern</h3>
+                                    <h4 class="company-name">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2026 – Present | Cairo, Egypt</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Demonstrated technical leadership and collaborative problem-solving by researching innovative approaches to complex data analytics challenges and guiding engineering teammates.</li>
+                                <li>Engineered automated agentic AI workflows using <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>FastAPI</strong>, streamlining operations and translating enterprise business rules into code.</li>
+                                <li>Formulated complex mathematical models to bridge conceptual technical specifications with scalable industrial applications.</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>LangChain</span>
+                                <span>LangGraph</span>
+                                <span>FastAPI</span>
+                                <span>Team Leadership</span>
+                                <span>Industrial AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: NTI AI Engineer Trainee -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="experience-title">AI Engineer Trainee</h3>
+                                    <h4 class="company-name">National Telecommunication Institute (NTI)</h4>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Mar 2026 – May 2026 | Cairo, Egypt</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Leveraged advanced computational principles to construct end-to-end Computer Vision pipelines utilizing <strong>Python</strong> and <strong>YOLOv8–v11</strong> for precise object detection.</li>
+                                <li>Trained, evaluated, and benchmarked deep neural network architectures across large-scale image repositories, achieving top-tier detection accuracy.</li>
+                                <li>Applied applied mathematics and optimization techniques to model tuning, successfully accelerating real-time inference throughput and reducing model latency.</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>YOLOv8–v11</span>
+                                <span>Computer Vision</span>
+                                <span>PyTorch</span>
+                                <span>Model Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: NTI in collaboration with Huawei -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="experience-title">ML Engineer Trainee</h3>
+                                    <h4 class="company-name">National Telecommunication Institute (NTI) & Huawei Collaboration</h4>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Aug 2025 | Cairo, Egypt</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Architected end-to-end Machine Learning pipelines encompassing systematic data preprocessing, exploratory data analysis, and advanced feature engineering.</li>
+                                <li>Utilized applied statistics, linear algebra, and mathematical computing software to address complex data science challenges, resulting in highly dependable predictive modeling systems.</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>Machine Learning</span>
+                                <span>Huawei AI Ecosystem</span>
+                                <span>Statistics</span>
+                                <span>Feature Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Showcase -->
+                <div class="certifications-block" data-aos="fade-up">
+                    <h3 class="certifications-heading"><i class="fas fa-certificate"></i> Verified Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="cert-card glass-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>AI for Business</h4>
+                                <p>NTI & Digital Egypt Pioneers Initiative (DEPI)</p>
+                            </div>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>AI With Huawei</h4>
+                                <p>National Telecommunication Institute (NTI)</p>
+                            </div>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>Python Programming</h4>
+                                <p>MaharaTech — Information Technology Institute (ITI Mooca)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get in Touch for <span class="highlight-gradient">New Opportunities</span></h2>
+                    <p class="section-desc">Have a project, job opportunity, or technical discussion in mind? Feel free to reach out anytime.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Left: Interactive Contact Cards (Clickable) -->
+                    <div class="contact-info-col" data-aos="fade-right">
+                        <div class="contact-intro">
+                            <h3>Let's build intelligent systems together</h3>
+                            <p>I am open to full-time roles, internships, and collaborative AI projects where I can bring algorithmic problem-solving and machine learning expertise to your team.</p>
+                        </div>
+
+                        <div class="interactive-contact-list">
+                            <!-- Clickable Email Card -->
+                            <a href="mailto:hanouraabdo8@gmail.com" class="interactive-contact-card" title="Click to send an email">
+                                <div class="contact-card-icon bg-violet">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Email Address</span>
+                                    <span class="contact-card-value">hanouraabdo8@gmail.com</span>
+                                </div>
+                                <div class="contact-card-arrow">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </div>
+                            </a>
+
+                            <!-- Clickable Phone Card -->
+                            <a href="https://wa.me/201097868996" class="interactive-contact-card" title="WhatsApp Chat">
+                                <div class="contact-card-icon bg-emerald">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Direct Phone / WhatsApp</span>
+                                    <span class="contact-card-value">+20 109 786 8996</span>
+                                </div>
+                                <div class="contact-card-arrow">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </div>
+                            </a>
+
+                            <!-- Clickable LinkedIn Card -->
+                            <a href="https://linkedin.com/in/abdo-hannoura" target="_blank" rel="noopener noreferrer" class="interactive-contact-card" title="Click to open LinkedIn">
+                                <div class="contact-card-icon bg-indigo">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">LinkedIn Profile</span>
+                                    <span class="contact-card-value">linkedin.com/in/abdo-hannoura</span>
+                                </div>
+                                <div class="contact-card-arrow">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </div>
+                            </a>
+
+                            <!-- Clickable GitHub Card -->
+                            <a href="https://github.com/abdelrahman-2005" target="_blank" rel="noopener noreferrer" class="interactive-contact-card" title="Click to open GitHub">
+                                <div class="contact-card-icon bg-slate">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">GitHub Portfolio</span>
+                                    <span class="contact-card-value">github.com/abdelrahman-2005</span>
+                                </div>
+                                <div class="contact-card-arrow">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </div>
+                            </a>
+
+                            <!-- Location Card -->
+                            <a href="https://maps.google.com/?q=Cairo,Egypt" target="_blank" rel="noopener noreferrer" class="interactive-contact-card" title="Click to view on Google Maps">
+                                <div class="contact-card-icon bg-amber">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Location</span>
+                                    <span class="contact-card-value">Cairo, Egypt</span>
+                                </div>
+                                <div class="contact-card-arrow">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-col glass-card" data-aos="fade-left">
+                        <h3 class="form-title">Send a Direct Message</h3>
+                        <p class="form-subtitle">Fill out this quick form and I will respond to your inquiry promptly.</p>
+
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Full Name <span class="required">*</span></label>
+                                    <div class="input-wrap">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required>
+                                    </div>
+                                    <span class="form-error-msg" id="name-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address <span class="required">*</span></label>
+                                    <div class="input-wrap">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="contact-email" name="email" placeholder="e.g. john@example.com" required>
+                                    </div>
+                                    <span class="form-error-msg" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject <span class="required">*</span></label>
+                                <div class="input-wrap">
+                                    <i class="fas fa-heading"></i>
+                                    <input type="text" id="contact-subject" name="subject" placeholder="Project inquiry, collaboration, or opportunity" required>
+                                </div>
+                                <span class="form-error-msg" id="subject-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Message <span class="required">*</span></label>
+                                <div class="input-wrap textarea-wrap">
+                                    <i class="fas fa-message"></i>
+                                    <textarea id="contact-message" name="message" rows="5" placeholder="Share the details of your project or inquiry..." required></textarea>
+                                </div>
+                                <span class="form-error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <!-- Feedback Toast / Alert -->
+                            <div class="form-feedback" id="form-feedback" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Abdelraman Esmail Hanoura. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo">
+                        <span class="logo-circle">AH</span>
+                        <span class="brand-name">Abdelrahman<span class="brand-dot">.</span></span>
+                    </a>
+                    <p class="footer-motto">Data Scientist & AI Engineer dedicated to developing intelligent, reliable, and scalable computational solutions.</p>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Technical Skills</a></li>
+                        <li><a href="#projects">Selected Projects</a></li>
+                        <li><a href="#experience">Experience & Training</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Quick Documents</h4>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1FQif_pcu1FBZQSCa1dgez5DvVTWGsmm0/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> View / Download CV (PDF)</a></li>
+                        <li><a href="abdelrahman(cv,ds).pdf" download="Abdelrahman_Hanoura_CV.pdf"><i class="fas fa-download"></i> Direct Download (PDF)</a></li>
+                        <li><a href="https://github.com/abdelrahman-2005" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub Repos</a></li>
+                        <li><a href="https://linkedin.com/in/abdo-hannoura" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abdelrahman Hanoura. All rights reserved.</p>
+                <div class="footer-social-pills">
+                    <a href="https://linkedin.com/in/abdo-hannoura" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/abdelrahman-2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:hanouraabdo8@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+201097868996" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Back To Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS (Animate On Scroll) JS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Main JS File -->
     <script src="script.js"></script>
 </body>
 </html>
